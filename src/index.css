@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f6eee8;
+}
+
+/* carousel */
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  margin-top: 80px;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
