@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import Paints from "../assets/icons/paints.svg";
 import Home from "../assets/icons/home.svg";
 import Whatsapp from "../assets/icons/whatsapp.svg";
@@ -7,37 +9,37 @@ import Underline from "../assets/icons/underline.svg";
 
 const Navbar = () => {
   return (
-    <div>
+    <header>
       {/* desktop navbar */}
 
-      <div className="fixed z-10 flex items-center top-0 w-full h-20 bg-white shadow-md">
-        <nav className="w-full md:mx-11 lg:mx-[136px]">
+      <div className="fixed z-10 flex items-center justify-center w-full mx-auto h-20 bg-white shadow-md">
+        <nav className="w-full max-w-[1366px] md:mx-11">
           <ul className="flex justify-center md:justify-between items-center">
-            <div>
+            <Link to={"/"}>
               <img src={Logo} alt="" />
-            </div>
+            </Link>
 
             {/* no mostrar en mobile */}
 
             <div className="hidden md:flex justify-between w-64">
               <div>
-                <a className="font-redHat font-medium" href="#">
+                <HashLink to={"/#home"} className="font-redHat font-medium">
                   Home
-                </a>
+                </HashLink>
                 <img src={Underline} alt="" />
               </div>
 
               <div>
-                <a className="font-redHat font-medium" href="#">
+                <Link to={"/obras"} className="font-redHat font-medium">
                   Obras
-                </a>
+                </Link>
                 <img src={Underline} alt="" />
               </div>
 
               <div>
-                <a className="font-redHat font-medium" href="#">
+                <HashLink to={"/#contact"} className="font-redHat font-medium">
                   Contacto
-                </a>
+                </HashLink>
                 <img src={Underline} alt="" />
               </div>
             </div>
@@ -50,19 +52,19 @@ const Navbar = () => {
       <div className="fixed z-10 flex justify-center items-center bottom-0 bg-white w-full h-12 mx-auto md:hidden">
         <nav className="flex w-52 h-8">
           <ul className="flex justify-between items-center w-full">
-            <a href="#">
+            <Link to={"/obras"}>
               <img className="w-7 h-7" src={Paints} alt="" />
-            </a>
-            <a href="#">
+            </Link>
+            <HashLink to={"/#home"}>
               <img className="w-7 h-7" src={Home} alt="" />
-            </a>
-            <a href="#">
+            </HashLink>
+            <HashLink to={"/#contact"}>
               <img className="w-7 h-7" src={Whatsapp} alt="" />
-            </a>
+            </HashLink>
           </ul>
         </nav>
       </div>
-    </div>
+    </header>
   );
 };
 

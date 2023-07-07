@@ -13,7 +13,7 @@ export const EmblaCarousel = () => {
 
   return (
     <>
-      <div className="embla" ref={emblaRef}>
+      <div id="home" className="embla" ref={emblaRef}>
         <div className="embla__container">
           <div className="embla__slide">
             <img src={Img1} alt="" />
@@ -24,7 +24,7 @@ export const EmblaCarousel = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center py-12">
+      <div className="flex flex-col items-center py-12 bg-gradient-to-b from-white to-white/0">
         <h1 className="leading-10 font-redHat font-semibold text-4xl text-black">
           Roberto Pérez
         </h1>
