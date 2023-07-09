@@ -13,7 +13,7 @@ body {
 }
 .embla__container {
   display: flex;
-  margin-top: 80px;
+  margin-top: 56px;
 }
 .embla__slide {
   flex: 0 0 100%;

@@ -25,9 +25,10 @@ const CardContainer = () => {
 
             return (
 
-              <Link key={paint.id} to={`/obras/${paint.id}`}>
+              <Link key={idx} to={`/obras/${paint.id}`}>
 
                 <Card 
+                key={paint.id}
                 img={paint.img}
                 title={paint.title}
                 detail={paint.detail}

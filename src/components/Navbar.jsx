@@ -12,7 +12,7 @@ const Navbar = () => {
     <header>
       {/* desktop navbar */}
 
-      <div className="fixed z-10 flex items-center justify-center w-full mx-auto h-20 bg-white shadow-md">
+      <div className="fixed z-10 flex items-center justify-center w-full mx-auto h-14 md:h-20 bg-white shadow-md">
         <nav className="w-full max-w-[1366px] md:mx-11">
           <ul className="flex justify-center md:justify-between items-center">
             <Link to={"/"}>
@@ -49,7 +49,7 @@ const Navbar = () => {
 
       {/* mobile navbar */}
 
-      <div className="fixed z-10 flex justify-center items-center bottom-0 bg-white w-full h-12 mx-auto md:hidden">
+      <div className="hidden fixed z-10 flex justify-center items-center bottom-0 bg-white w-full h-12 mx-auto md:hidden">
         <nav className="flex w-52 h-8">
           <ul className="flex justify-between items-center w-full">
             <Link to={"/obras"}>
