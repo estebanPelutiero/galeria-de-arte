@@ -24,7 +24,7 @@ const Contact = () => {
         <img className='hidden md:block rotate-90 h-[0.6px] bg-black/30' src={Line} alt="" />
 
         <div className='flex items-center mx-[30px]'>
-          <a href="#"><img className='w-5 md:w-7' src={Whatsapp} alt="" /></a>
+          <a href="https://wa.me/543489501917" target='_blank' rel='noopener noreferer'><img className='w-5 md:w-7' src={Whatsapp} alt="" /></a>
           <p className='font-redHat text-base px-3'>
             + 54 3489 501917
           </p>

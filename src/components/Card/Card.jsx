@@ -4,8 +4,6 @@ import Line from "../../assets/icons/line.svg";
 
 const Card = ({ img, title, detail }) => {
 
-  
-
   return (
 
       <article className="flex flex-col items-center w-[18.75rem] h-[24.5rem]">

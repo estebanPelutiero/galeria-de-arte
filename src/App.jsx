@@ -1,17 +1,20 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import SocialMedia from './components/SocialMedia';
 import Contact from './components/Contact';
 import Paintings from './components/Paintings';
-import { Routes, Route } from "react-router-dom";
 import EmblaCarousel from "./components/EmblaCarousel";
 import CardContainer from "./components/Card/CardContainer";
 import CardDetailContainer from "./components/Card Detail/CardDetailContainer";
 
 function App() {
+
   return (
     <>
+      <ScrollToTop />
       <Navbar />
         <Routes>
           <Route path="/" element={

@@ -69,15 +69,27 @@ const CardDetail = ({ id, img, title, detail }) => {
 
           {/* Boton consulta de precio */}
 
-          <div className="flex justify-center w-full lg:w-[75%] mt-7 lg:my-5 ">
-            <a href="#" className="flex items-center justify-center gap-3 bg-white rounded-lg border-[1px] border-orange h-9 py-1 px-2">
-              <p className="font-redHat font-bold text-lg text-orange">
+          <div className="flex flex-col md:flex-row md:justify-around lg:justify-between items-center w-full lg:w-[75%] mt-7 lg:my-5">
+            <a 
+            href={`https://wa.me/543489501917?text=Hola,%20me%20gustaría%20tener%20mas%20info%20de%20la%20obra%20"${title}"`} 
+            target="_blank" rel="noopener noreferer"
+            className="flex items-center bg-orange rounded-lg border-[1px] border-orange h-9 py-1 px-2 my-3 shadow-md">
+              <p className="font-redHat font-semibold text-lg text-white text-center">
                 Consultar precio
               </p>
-              <img src={Whatsapp} alt="" />
+            </a>
+
+            {/* Boton de ver en pantalla completa */}
+
+            <a href={img} target="_blank" rel="noopener noreferer" className="flex items-center justify-center bg-white rounded-lg border-[1px] border-orange h-7 my-4 py-1 px-2 shadow-md">
+              <p className="font-redHat font-bold text-sm text-brick">
+                Ver en pantalla completa
+              </p>
             </a>
           </div>
+
         </section>
+
       </main>
 
       {/* Contacto y redes sociales */}
@@ -100,7 +112,7 @@ const CardDetail = ({ id, img, title, detail }) => {
 
           <div className="md:flex justify-around my-2 py-1 px-6 bg-white rounded-lg shadow-md">
             <div className="flex items-center gap-4 my-3 w-fit">
-              <a href="#">
+              <a href="https://wa.me/543489501917" target="_blank" rel="noopener noreferer">
                 <img className="lg:w-7" src={Whatsapp} alt="Whatsapp" />
               </a>
               <p>+ 54 3489 501917</p>

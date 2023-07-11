@@ -17,7 +17,7 @@ const CardContainer = () => {
       </div>
 
 
-      <section className='max-w-[1366px] h-fit grid grid-cols-1 justify-items-center gap-10 md:grid-cols-2 lg:grid-cols-3 mx-auto '>
+      <section className='max-w-[1366px] h-fit grid grid-cols-1 justify-items-center gap-10 md:grid-cols-2 lg:grid-cols-3 mx-auto'>
 
         {paintings.map((paint, idx) => {
 
@@ -43,13 +43,14 @@ const CardContainer = () => {
 
       </section>
 
-      <div className='w-fit my-8 mx-auto py-2 flex justify-center'>
-        <button className='bg-orange border-white font-redHat font-semibold text-base text-background px-5 py-[0.4rem] rounded-md'>
-          <Link to={"/obras"} >
-            Ver todas las obras
-          </Link>
-        </button>
-      </div>
+      <Link to={"/obras"} >
+        <div className='w-fit my-8 mx-auto py-2 flex justify-center'>
+          <button className='bg-orange border-white font-redHat font-semibold text-base text-background px-5 py-[0.4rem] rounded-md'>
+              Ver todas las obras
+          </button>
+        </div>
+      </Link>
+      
     </main>
 
   )
