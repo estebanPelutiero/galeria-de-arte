@@ -7,9 +7,9 @@ const Paintings = () => {
 
   return (
 
-    <main className='max-w-[1366px]'>
+    <main className='max-w-[1366px] mx-auto'>
 
-      <section className=' h-fit grid grid-cols-1 justify-items-center gap-y-10 gap-x-1 md:grid-cols-2 lg:grid-cols-3 py-20 md:py-28 mx-auto'>
+      <section className='h-fit grid grid-cols-1 justify-items-center gap-y-10 gap-x-1 md:grid-cols-2 lg:grid-cols-3 py-20 md:py-28 mx-auto'>
 
         {paintings.map((paint, idx)=> {
           

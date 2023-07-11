@@ -10,12 +10,13 @@ import Facebook from "../../assets/icons/facebook.svg";
 const CardDetail = ({ id, img, title, detail }) => {
   return (
 
-    <div className="flex flex-col 2xl:justify-center max-w-[1366px] px-16">
+    <div className="flex flex-col 2xl:justify-center max-w-[1366px]">
 
-      <main className="lg:flex justify-between mt-20 md:mt-28 px-5">
+      <main className="lg:flex justify-between mt-20 md:mt-28">
+        
         <article
           id={id}
-          className="lg:flex items-center w-[20.5rem] md:w-[42.5rem] lg:w-[45%] h-fit lg:h-full"
+          className="lg:flex items-center w-[20.5rem] md:w-[42.5rem] lg:w-[45%] h-fit lg:h-full mx-auto"
         >
           {/* img */}
 
@@ -30,7 +31,7 @@ const CardDetail = ({ id, img, title, detail }) => {
 
         {/* Titulo y descripcion de card */}
 
-        <section className="flex flex-col justify-stretch items-center mt-5 lg:px-10 py-5 px-3 lg:mt-0 h-fit lg:w-[50%] rounded-md bg-white/50 shadow-md">
+        <section className="flex flex-col justify-stretch items-center mt-5 lg:px-10 py-5 px-3 mx-2 md:mx-5 lg:mt-0 h-fit lg:w-[50%] rounded-md bg-white/50 shadow-md">
 
           {/* Titulo */}
 
