@@ -8,7 +8,6 @@ const CardDetailContainer = () => {
   let { id } = useParams();
 
   const [paint, setPaint] = useState({});
-  console.log(paint)
 
   const fetchPaint = () => {
     const result = paintings.filter(item => item.id === parseInt(id));

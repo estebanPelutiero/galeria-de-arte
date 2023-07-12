@@ -6,8 +6,6 @@ import { Link } from 'react-router-dom';
 
 const CardContainer = () => {
 
-  console.log(paintings);
-  
   return (
 
     <main className='max-w-[1366px] mx-auto'>

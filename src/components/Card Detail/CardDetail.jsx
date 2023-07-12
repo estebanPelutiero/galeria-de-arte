@@ -31,7 +31,7 @@ const CardDetail = ({ id, img, title, detail }) => {
 
         {/* Titulo y descripcion de card */}
 
-        <section className="flex flex-col justify-stretch items-center mt-5 lg:px-10 py-5 px-3 mx-2 md:mx-5 lg:mt-0 h-fit lg:w-[50%] rounded-md bg-white/50 shadow-md">
+        <section className="flex flex-col justify-stretch items-center mt-5 lg:px-10 py-5 px-3 mx-4 md:mx-5 lg:mt-0 h-fit lg:w-[50%] rounded-md bg-white/50 shadow-md">
 
           {/* Titulo */}
 
@@ -112,16 +112,16 @@ const CardDetail = ({ id, img, title, detail }) => {
           {/* recuadro de iconos y texto */}
 
           <div className="md:flex justify-around my-2 py-1 px-6 bg-white rounded-lg shadow-md">
-            <div className="flex items-center gap-4 my-3 w-fit">
+            <div className="flex items-center gap-4 my-4 w-fit">
               <a href="https://wa.me/543489501917" target="_blank" rel="noopener noreferer">
-                <img className="lg:w-7" src={Whatsapp} alt="Whatsapp" />
+                <img className="w-6 md:w-7" src={Whatsapp} alt="Whatsapp" />
               </a>
               <p>+ 54 3489 501917</p>
             </div>
 
-            <div className="flex items-center gap-4 my-3 w-fit">
+            <div className="flex items-center gap-4 my-4 w-fit">
               <a href="#">
-                <img className="lg:w-7" src={Mail} alt="Email" />
+                <img className="w-6 md:w-7" src={Mail} alt="Email" />
               </a>
               <p>hola@rexoart.com</p>
             </div>

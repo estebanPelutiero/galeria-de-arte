@@ -15,9 +15,9 @@ const Navbar = () => {
       <div className="fixed z-10 flex items-center justify-center w-full mx-auto h-14 md:h-20 bg-white shadow-md">
         <nav className="w-full max-w-[1366px] md:mx-11">
           <ul className="flex justify-center md:justify-between items-center">
-            <Link to={"/"}>
+            <HashLink to={"/#home"}>
               <img src={Logo} alt="" />
-            </Link>
+            </HashLink>
 
             {/* no mostrar en mobile */}
 
@@ -50,8 +50,8 @@ const Navbar = () => {
       {/* mobile navbar */}
 
       <div className="fixed z-10 flex justify-center items-center bottom-0 bg-white w-full h-12 mx-auto md:hidden">
-        <nav className="flex w-52 h-8">
-          <ul className="flex justify-between items-center w-full">
+        <nav className="flex w-[80%] h-8">
+          <ul className="flex justify-around items-center w-full">
             <Link to={"/obras"}>
               <img className="w-7 h-7" src={Paints} alt="" />
             </Link>

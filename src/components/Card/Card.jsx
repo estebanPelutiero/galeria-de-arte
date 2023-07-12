@@ -10,7 +10,7 @@ const Card = ({ img, title, detail }) => {
 
         {/* img */}
         <div className="flex justify-center w-full h-[78%] mb-3 p-2 rounded-[4px] bg-gradient-to-t from-white to-background">
-          <img className="h-full rounded-[4px] object-contain" src={img} alt={title} />
+          <img className="w-full rounded-[4px] object-cover" src={img} alt={title} />
         </div>
 
         {/* descripcion */}
