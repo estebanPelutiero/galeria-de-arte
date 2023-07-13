@@ -15,16 +15,16 @@ const Contact = () => {
       <div className='flex flex-col md:flex-row justify-evenly items-start md:items-center w-full md:w-[88.5%] lg:w-[80%] 2xl:w-full rounded-lg h-24 mx-auto mb-16 bg-white shadow-md'>
 
         <div className='flex items-center mx-[30px]'>
-          <a href="#"><img className='w-5 md:w-7' src={Mail} alt="" /></a>
+          <a title='E-mail' href="mailto:rlperez1@gmail.com"><img className='w-5 md:w-7' src={Mail} alt="E-mail" /></a>
           <p className='font-redHat text-base px-3'>
-            hola@rexoart.com
+            rlperez1@gmail.com
           </p>
         </div>
 
         <img className='hidden md:block rotate-90 h-[0.6px] bg-black/30' src={Line} alt="" />
 
         <div className='flex items-center mx-[30px]'>
-          <a href="https://wa.me/543489501917" target='_blank' rel='noopener noreferer'><img className='w-5 md:w-7' src={Whatsapp} alt="" /></a>
+          <a href="https://wa.me/543489501917" title='Ir al chat' target='_blank' rel='noopener noreferer'><img className='w-5 md:w-7' src={Whatsapp} alt="Whatsapp" /></a>
           <p className='font-redHat text-base px-3'>
             + 54 3489 501917
           </p>

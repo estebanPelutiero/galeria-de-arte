@@ -4,6 +4,7 @@ import Underline from "../../assets/icons/underline.svg";
 import Whatsapp from "../../assets/icons/whatsapp.svg";
 import Mail from "../../assets/icons/email.svg";
 import Instagram from "../../assets/icons/instagram.svg";
+import Threads from "../../assets/icons/threads.svg";
 import Tiktok from "../../assets/icons/tiktok.svg";
 import Facebook from "../../assets/icons/facebook.svg";
 
@@ -105,25 +106,30 @@ const CardDetail = ({ id, img, title, detail }) => {
               Contacto
             </h3>
             <div>
-              <img src={Underline} alt="/" />
+              <img src={Underline} />
             </div>
           </div>
 
           {/* recuadro de iconos y texto */}
 
           <div className="md:flex justify-around my-2 py-1 px-6 bg-white rounded-lg shadow-md">
-            <div className="flex items-center gap-4 my-4 w-fit">
-              <a href="https://wa.me/543489501917" target="_blank" rel="noopener noreferer">
-                <img className="w-6 md:w-7" src={Whatsapp} alt="Whatsapp" />
-              </a>
-              <p>+ 54 3489 501917</p>
-            </div>
+
+            {/* Whatsapp */}
 
             <div className="flex items-center gap-4 my-4 w-fit">
-              <a href="#">
+              <a href="https://wa.me/543489501917" title="Ir al chat" target="_blank" rel="noopener noreferer">
+                <img className="w-6 md:w-7" src={Whatsapp} alt="Whatsapp" />
+              </a>
+              <p className="font-redHat text-base px-3">+ 54 3489 501917</p>
+            </div>
+
+            {/* Gmail */}
+
+            <div className="flex items-center gap-4 my-4 w-fit">
+              <a title="E-mail" href="mailto:rlperez1@gmail.com">
                 <img className="w-6 md:w-7" src={Mail} alt="Email" />
               </a>
-              <p>hola@rexoart.com</p>
+              <p className="font-redHat text-base px-3">rlperez1@gmail.com</p>
             </div>
           </div>
         </div>
@@ -141,14 +147,17 @@ const CardDetail = ({ id, img, title, detail }) => {
           </div>
 
           <div className="flex justify-evenly items-center my-2 py-5 px-3 bg-white rounded-lg shadow-md">
-            <a href="#">
-              <img className="w-[1.875rem]" src={Instagram} alt="" />
+            <a href="https://www.instagram.com/rlperez1/" title="Visitame en Instagram!" target='_blank' rel='noopener noreferer'>
+              <img className="w-[1.875rem]" src={Instagram} alt="Instagram" />
             </a>
-            <a href="#">
-              <img className="w-[1.875rem]" src={Tiktok} alt="" />
+            <a href="https://www.threads.net/@rlperez1" title="Visitame en Threads!" target='_blank' rel='noopener noreferer'>
+              <img className="w-[1.875rem]" src={Threads} alt="Threads" />
             </a>
-            <a href="#">
-              <img className="w-[1.875rem]" src={Facebook} alt="" />
+            <a href="#" title="Visitame en TikTok!" target='_blank' rel='noopener noreferer'>
+              <img className="w-[1.875rem]" src={Tiktok} alt="Tiktok" />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=1641544820&mibextid=ZbWKwL" title="Visitame en Facebook!" target='_blank' rel='noopener noreferer'>
+              <img className="w-[1.875rem]" src={Facebook} alt="Facebook" />
             </a>
           </div>
         </div>

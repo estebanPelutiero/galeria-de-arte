@@ -1,6 +1,7 @@
 import React from 'react';
 import Underline from "../assets/icons/underline.svg";
 import Instagram from '../assets/icons/instagram.svg';
+import Threads from '../assets/icons/threads.svg';
 import Tiktok from '../assets/icons/tiktok.svg';
 import Facebook from '../assets/icons/facebook.svg';
 
@@ -13,9 +14,10 @@ const SocialMedia = () => {
       </div>
 
       <div className='flex justify-evenly items-center mb-6 w-full md:w-[88.5%] lg:w-[80%] 2xl:w-full h-24 mx-auto 2xl:mx-0 rounded-lg bg-white shadow-md'>
-        <a href="https://www.instagram.com/rlperez1/" target='_blank' rel='noopener noreferer'><img className='w-[1.875rem]' src={Instagram} alt="" /></a>
-        <a href="#" target='_blank' rel='noopener noreferer'><img className='w-[1.875rem]' src={Tiktok} alt="" /></a>
-        <a href="#" target='_blank' rel='noopener noreferer'><img className='w-[1.875rem]' src={Facebook} alt="" /></a>
+        <a title='Visitame en Instagram!' href="https://www.instagram.com/rlperez1/" target='_blank' rel='noopener noreferer'><img className='w-[1.875rem]' src={Instagram} alt="Instagram" /></a>
+        <a title='Visitame en Threads!' href="https://www.threads.net/@rlperez1" target='_blank' rel='noopener noreferer'><img className='w-[1.875rem]' src={Threads} alt="Threads" /></a>
+        <a title='Visitame en TikTok!' href="#" target='_blank' rel='noopener noreferer'><img className='w-[1.875rem]' src={Tiktok} alt="Tiktok" /></a>
+        <a title='Visitame en Facebook!' href="https://www.facebook.com/profile.php?id=1641544820&mibextid=ZbWKwL" target='_blank' rel='noopener noreferer'><img className='w-[1.875rem]' src={Facebook} alt="Facebook" /></a>
       </div>
     </section>
   )
