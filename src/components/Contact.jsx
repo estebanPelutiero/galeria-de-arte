@@ -6,13 +6,13 @@ import Whatsapp from '../assets/icons/whatsapp.svg';
 
 const Contact = () => {
   return (
-    <section id='contact' className='max-w-[1366px] mx-auto lg:flex flex-col items-start'>
-      <div className='mx-[30px] md:mx-12 lg:mx-[136px] 2xl:mx-0 my-6 w-fit'>
+    <section id='contact' className='max-w-[1366px] mx-auto lg:flex flex-col items-start px-4 md:px-9 lg:px-16'>
+      <div className='my-6 w-fit'>
         <h3 className='font-redHat font-semibold text-xl lg:text-2xl text-black'>Contacto</h3>
         <div><img src={Underline} alt="/" /></div>
       </div>
 
-      <div className='flex flex-col md:flex-row justify-evenly items-start md:items-center w-full md:w-[88.5%] lg:w-[80%] 2xl:w-full rounded-lg h-24 mx-auto mb-16 bg-white shadow-md'>
+      <div className='flex flex-col md:flex-row justify-evenly items-start md:items-center w-full rounded-lg h-24 mx-auto mb-10 bg-white shadow-md'>
 
         <div className='flex items-center mx-[30px]'>
           <a title='E-mail' href="mailto:rlperez1@gmail.com"><img className='w-5 md:w-7' src={Mail} alt="E-mail" /></a>

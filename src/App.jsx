@@ -9,6 +9,7 @@ import Paintings from './components/Paintings';
 import EmblaCarousel from "./components/EmblaCarousel";
 import CardContainer from "./components/Card/CardContainer";
 import CardDetailContainer from "./components/Card Detail/CardDetailContainer";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -21,8 +22,8 @@ function App() {
 
             [<EmblaCarousel key={1} />,
             <CardContainer key={2} />,
-            <SocialMedia key={3}/>,
-            <Contact key={4}/>]
+            <Contact key={3} />,
+            <SocialMedia key={4} />]
             
           } />
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/obras/:id" element={<CardDetailContainer />} />
 
         </Routes>
+      <Footer />
     </>
   );
 }

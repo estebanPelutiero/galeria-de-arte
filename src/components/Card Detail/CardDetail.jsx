@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Line from "../../assets/icons/line.svg";
 import Underline from "../../assets/icons/underline.svg";
 import Whatsapp from "../../assets/icons/whatsapp.svg";
@@ -9,6 +9,7 @@ import Tiktok from "../../assets/icons/tiktok.svg";
 import Facebook from "../../assets/icons/facebook.svg";
 
 const CardDetail = ({ id, img, title, detail }) => {
+
   return (
 
     <div className="flex flex-col 2xl:justify-center max-w-[1366px]">
@@ -17,7 +18,7 @@ const CardDetail = ({ id, img, title, detail }) => {
         
         <article
           id={id}
-          className="lg:flex items-center w-[20.5rem] md:w-[42.5rem] lg:w-[45%] h-fit lg:h-full mx-auto"
+          className="lg:flex items-center w-[20.5rem] md:w-[42.5rem] lg:w-[40%] h-fit lg:h-full mx-auto"
         >
           {/* img */}
 
@@ -83,7 +84,8 @@ const CardDetail = ({ id, img, title, detail }) => {
 
             {/* Boton de ver en pantalla completa */}
 
-            <a href={img} target="_blank" rel="noopener noreferer" className="flex items-center justify-center bg-white rounded-lg border-[1px] border-orange h-7 my-4 py-1 px-2 shadow-md">
+            <a href={img} target="_blank" rel="noopener noreferer"
+            className="flex items-center justify-center bg-white rounded-lg border-[1px] border-orange h-7 my-4 py-1 px-2 shadow-md">
               <p className="font-redHat font-bold text-sm text-brick">
                 Ver en pantalla completa
               </p>
@@ -96,7 +98,7 @@ const CardDetail = ({ id, img, title, detail }) => {
 
       {/* Contacto y redes sociales */}
 
-      <section className="w-full px-5 mb-16">
+      <section className="w-full px-4 md:px-10 lg:px-12">
 
         {/* Contacto */}
 
@@ -112,7 +114,7 @@ const CardDetail = ({ id, img, title, detail }) => {
 
           {/* recuadro de iconos y texto */}
 
-          <div className="md:flex justify-around my-2 py-1 px-6 bg-white rounded-lg shadow-md">
+          <div className="md:flex justify-around my-2 py-1 px-6 md:h-24 bg-white rounded-lg shadow-md">
 
             {/* Whatsapp */}
 
@@ -146,7 +148,7 @@ const CardDetail = ({ id, img, title, detail }) => {
             </div>
           </div>
 
-          <div className="flex justify-evenly items-center my-2 py-5 px-3 bg-white rounded-lg shadow-md">
+          <div className="flex justify-around items-center my-2 py-5 px-3 h-24 bg-white rounded-lg shadow-md">
             <a href="https://www.instagram.com/rlperez1/" title="Visitame en Instagram!" target='_blank' rel='noopener noreferer'>
               <img className="w-[1.875rem]" src={Instagram} alt="Instagram" />
             </a>

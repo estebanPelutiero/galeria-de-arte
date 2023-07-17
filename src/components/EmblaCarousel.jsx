@@ -4,7 +4,7 @@ import Autoplay from "embla-carousel-autoplay";
 import Img1 from "../assets/carousel/1.jpg";
 import Img2 from "../assets/carousel/2.jpg";
 
-const autoplayOptions = { delay: 6000 };
+const autoplayOptions = { delay: 4000 };
 
 export const EmblaCarousel = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [
