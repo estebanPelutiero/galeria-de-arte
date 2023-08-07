@@ -11,9 +11,9 @@ const Paintings = () => {
 
     <main className='max-w-[1366px] mx-auto'>
 
-      <div className='pt-20 pb-5 md:pt-28 w-[80%] md:w-[90%] mx-auto'>
+      <div className='px-4 md:px-9 lg:px-16 pt-20 md:pt-28'>
 
-        <h1 className='font-redHat font-semibold text-xl lg:text-2xl text-black'>
+        <h1 className='font-redHat font-semibold text-xl text-black'>
           Todas las obras
         </h1>
         <div>

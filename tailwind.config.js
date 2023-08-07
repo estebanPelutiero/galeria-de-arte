@@ -17,9 +17,10 @@ export default {
     },
 
     fontFamily: {
-      'redHat': ["'Red Hat Display'", 'sans-serif']
+      'redHat': ["'Ysabeau SC'", 'sans-serif'],
+      'think-text': ['Ysabeau', 'sans-serif']
     }
   },
-  plugins: [],
+  plugins: [require('tailwindcss-animated')],
 }
 

@@ -25,6 +25,7 @@ const CardDetailContainer = () => {
       img={paint.img}
       title={paint.title}
       detail={paint.detail}
+      think={paint.think}
        />
     </div>
   )

@@ -1,6 +1,14 @@
 import React from "react";
 import Line from "../../assets/icons/line.svg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+const aosInit = () => {
+  AOS.init();
+} 
 
+aosInit();
 
 const Card = ({ img, title, detail }) => {
 
@@ -10,7 +18,12 @@ const Card = ({ img, title, detail }) => {
 
         {/* img */}
         <div className="flex justify-center w-full h-[78%] mb-3 p-2 rounded-[4px] bg-gradient-to-t from-white to-background">
-          <img className="w-full rounded-[4px] object-cover" src={img} alt={title} />
+          <img 
+          className="w-full rounded-[4px] object-cover" 
+          src={img} 
+          alt={title}
+          loading="lazy"
+          />
         </div>
 
         {/* descripcion */}

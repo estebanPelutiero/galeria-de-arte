@@ -4,7 +4,7 @@
 
 body {
   background-color: #f6eee8;
-}
+} 
 
 /* carousel */
 
@@ -19,3 +19,4 @@ body {
   flex: 0 0 100%;
   min-width: 0;
 }
+

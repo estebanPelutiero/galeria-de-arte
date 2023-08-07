@@ -1,6 +1,8 @@
 import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import Img1 from "../assets/carousel/1.jpg";
 import Img2 from "../assets/carousel/2.jpg";
 
@@ -16,19 +18,25 @@ export const EmblaCarousel = () => {
       <div id="home" className="embla" ref={emblaRef}>
         <div className="embla__container">
           <div className="embla__slide">
-            <img src={Img1} alt="" />
+            <img 
+            src={Img1} 
+            alt=""
+            loading="lazy" />
           </div>
           <div className="embla__slide">
-            <img src={Img2} alt="" />
+            <img 
+            src={Img2} 
+            alt=""
+            loading="lazy" />
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col items-center py-12 bg-gradient-to-b from-white to-white/0">
-        <h1 className="leading-10 font-redHat font-semibold text-4xl text-black">
+      <div className="flex flex-col items-center py-28 bg-gradient-to-b from-white to-white/0">
+        <h1 className="py-1 leading-10 font-redHat font-medium text-[2.5rem] text-black animate-fade animate-duration-1000 animate-delay-500">
           Roberto Pérez
         </h1>
-        <h4 className="leading-10 font-redHat font-semibold text-xl text-orange">
+        <h4 className="leading-10 font-redHat font-medium text-[1.5rem] text-orange tracking-wider animate-fade animate-duration-1000 animate-delay-1000">
           Artista Plástico
         </h4>
       </div>

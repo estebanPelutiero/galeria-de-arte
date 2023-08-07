@@ -9,8 +9,8 @@ const CardContainer = () => {
   return (
 
     <main className='max-w-[1366px] mx-auto'>
-      <div className='w-fit mx-[8%] md:mx-[4%] lg:mx-[4.6%] my-[30px] lg:my-[50px]'>
-        <h3 className='font-redHat font-semibold text-xl lg:text-2xl text-black'>Obras</h3>
+      <div className='px-4 md:px-9 lg:px-16 mt-8 mb-5'>
+        <h3 className='font-redHat font-semibold text-xl text-black'>Obras</h3>
         <div><img src={Underline} alt="/" /></div>
       </div>
 
@@ -42,8 +42,8 @@ const CardContainer = () => {
       </section>
 
       <Link to={"/obras"} >
-        <div className='w-fit my-8 mx-auto py-2 flex justify-center'>
-          <button className='bg-orange border-white font-redHat font-semibold text-base text-background px-5 py-[0.4rem] rounded-md'>
+        <div className='w-fit mt-14 mb-20 mx-auto p-2 flex justify-center'>
+          <button className='bg-orange border-white font-redHat font-semibold text-base lg:text-lg text-background px-5 py-[0.4rem] rounded-md shadow-md hover:scale-[102%] duration-200 ease-in-out hover:bg-orange/90'>
               Ver todas las obras
           </button>
         </div>
