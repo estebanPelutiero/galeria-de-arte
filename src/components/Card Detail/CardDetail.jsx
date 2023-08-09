@@ -19,11 +19,11 @@ const CardDetail = ({ id, img, title, detail, think }) => {
         <article
           data-aos="fade-right" data-aos-duration="1500"
           id={id}
-          className="lg:flex items-center justify-center w-[20.5rem] md:w-[42.5rem] lg:w-[42%] h-fit lg:h-full mx-auto bg-white/50 rounded-md shadow-md p-2"
+          className="md:flex items-center justify-center w-[20.5rem] md:w-[42.5rem] lg:w-[42%] h-fit lg:h-full mx-auto bg-white/50 rounded-md shadow-md p-2"
         >
           {/* img */}
 
-          <div className="h-[78%] lg:h-full lg:flex items-center mb-3 lg:mb-0 rounded-[4px]">
+          <div className="h-[78%] lg:h-full lg:flex items-center rounded-[4px]">
             <img
               className="rounded-[4px] object-contain"
               src={img}
@@ -38,20 +38,12 @@ const CardDetail = ({ id, img, title, detail, think }) => {
 
           {/* Titulo */}
 
-          <div className="flex flex-col items-center w-full md:w-fit md:px-6 mb-5 lg:mt-3 lg:mb-5 py-1 md:py-2 rounded-[4px] shadow-md bg-white">
+          <div className="flex flex-col md:flex-row items-center w-full md:px-4 mb-5 lg:mt-3 lg:mb-5 py-1 md:py-2 rounded-[4px] shadow-md bg-white">
             <div className="font-redHat font-bold text-base lg:text-lg text-brick py-1 w-full text-center">
               <span className="text-black">"</span>
               {title}
               <span className="text-black">"</span>
             </div>
-
-            {/* linea divisoria */}
-
-            <img
-              className="bg-black/25 my-1"
-              src={Line}
-              alt=""
-            />
 
             {/* detalle */}
 
@@ -72,6 +64,7 @@ const CardDetail = ({ id, img, title, detail, think }) => {
 
           <div className="flex flex-col md:flex-row md:justify-around lg:justify-between items-center w-full lg:w-[75%] mt-7 lg:my-5">
             <a 
+            title={`Mas info sobre "${title}"`}
             href={`https://wa.me/543489501917?text=Hola,%20me%20gustaría%20tener%20mas%20info%20de%20la%20obra%20"${title}"`} 
             target="_blank" rel="noopener noreferer"
             className="flex items-center bg-orange rounded-lg border-[1px] border-orange h-9 py-1 px-2 my-3 shadow-md">
@@ -154,7 +147,7 @@ const CardDetail = ({ id, img, title, detail, think }) => {
             <a href="https://www.threads.net/@rlperez1" title="Visitame en Threads!" target='_blank' rel='noopener noreferer'>
               <img className="w-[1.875rem]" src={Threads} alt="Threads" />
             </a>
-            <a href="#" title="Visitame en TikTok!" target='_blank' rel='noopener noreferer'>
+            <a href="https://www.tiktok.com/@robertorexoperez308" title="Visitame en TikTok!" target='_blank' rel='noopener noreferer'>
               <img className="w-[1.875rem]" src={Tiktok} alt="Tiktok" />
             </a>
             <a href="https://www.facebook.com/profile.php?id=1641544820&mibextid=ZbWKwL" title="Visitame en Facebook!" target='_blank' rel='noopener noreferer'>

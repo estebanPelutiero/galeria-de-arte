@@ -22,7 +22,7 @@ const Navbar = () => {
         <nav className="w-full max-w-[1366px] md:mx-11">
           <ul className="flex justify-center md:justify-between items-center">
             <HashLink className="ml-2 md:ml-0" to={"/#home"}>
-              <img className="w-24 md:w-28 py-1" src={Logo} alt="" />
+              <img className="w-24 md:w-32 py-1" src={Logo} alt="" />
             </HashLink>
 
             {/* no mostrar en mobile */}
@@ -61,13 +61,13 @@ const Navbar = () => {
       <div className={nav ? "fixed z-10 flex justify-center items-center top-[65.9px] bg-white w-full h-fit mx-auto" : "fixed left-[-100%]"}>
         <nav className="flex w-full">
           <ul className="flex flex-col justify-around items-center w-full">
-            <HashLink className="text-center font-medium py-3 px-3 border-b border-t border-t-background border-b-background font-redHat w-full" to={"/#home"}>
+            <HashLink onClick={() => handleNav()} className="text-center font-medium py-3 px-3 border-b border-t border-t-background border-b-background font-redHat w-full" to={"/#home"}>
               Home
             </HashLink>
-            <Link className="text-center font-medium py-3 px-3 border-b border-b-background font-redHat w-full" to={"/obras"}>
+            <Link onClick={() => handleNav()} className="text-center font-medium py-3 px-3 border-b border-b-background font-redHat w-full" to={"/obras"}>
               Obras
             </Link>
-            <HashLink className="text-center font-medium py-3 px-3 border-b border-b-background font-redHat w-full" to={"/#contact"}>
+            <HashLink onClick={() => handleNav()} className="text-center font-medium py-3 px-3 border-b border-b-background font-redHat w-full" to={"/#contact"}>
               Contacto
             </HashLink>
           </ul>
