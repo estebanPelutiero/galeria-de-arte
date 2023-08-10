@@ -14,7 +14,7 @@ const Card = ({ img, title, detail }) => {
 
   return (
 
-      <article className="flex flex-col items-center w-[18.75rem] h-[24.5rem]">
+      <article className="flex flex-col items-center w-[20rem] h-[24.5rem]">
 
         {/* img */}
         <div className="flex justify-center w-full h-[78%] mb-3 p-2 rounded-[4px] bg-gradient-to-t from-white to-background">
@@ -30,7 +30,7 @@ const Card = ({ img, title, detail }) => {
         <div className="flex flex-col items-center w-full py-1 rounded-[4px] shadow-md bg-white">
 
           {/* titulo */}
-          <div className="font-redHat font-bold text-base text-brick py-1">
+          <div className="font-redHat font-bold text-lg text-brick py-1">
             <span className="text-black">"</span>{title}
             <span className="text-black">"</span>
           </div>

@@ -17,7 +17,11 @@ export const EmblaCarousel = () => {
 
   return (
     <>
-      <div id="home" className="embla" ref={emblaRef}>
+      <div
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-offset="0"
+      id="home" className="embla" ref={emblaRef}>
         <div className="embla__container">
           <div className="embla__slide">
             <img 

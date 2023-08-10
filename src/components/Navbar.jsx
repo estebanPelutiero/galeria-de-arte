@@ -61,13 +61,13 @@ const Navbar = () => {
       <div className={nav ? "fixed z-10 flex justify-center items-center top-[65.9px] bg-white w-full h-fit mx-auto" : "fixed left-[-100%]"}>
         <nav className="flex w-full">
           <ul className="flex flex-col justify-around items-center w-full">
-            <HashLink onClick={() => handleNav()} className="text-center font-medium py-3 px-3 border-b border-t border-t-background border-b-background font-redHat w-full" to={"/#home"}>
+            <HashLink className="text-center font-medium py-3 px-3 border-b border-t border-t-background border-b-background font-redHat w-full" to={"/#home"}>
               Home
             </HashLink>
-            <Link onClick={() => handleNav()} className="text-center font-medium py-3 px-3 border-b border-b-background font-redHat w-full" to={"/obras"}>
+            <Link className="text-center font-medium py-3 px-3 border-b border-b-background font-redHat w-full" to={"/obras"}>
               Obras
             </Link>
-            <HashLink onClick={() => handleNav()} className="text-center font-medium py-3 px-3 border-b border-b-background font-redHat w-full" to={"/#contact"}>
+            <HashLink className="text-center font-medium py-3 px-3 border-b border-b-background font-redHat w-full" to={"/#contact"}>
               Contacto
             </HashLink>
           </ul>

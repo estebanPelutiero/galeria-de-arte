@@ -1,5 +1,4 @@
 import React from "react";
-import Line from "../../assets/icons/line.svg";
 import Underline from "../../assets/icons/underline.svg";
 import Whatsapp from "../../assets/icons/whatsapp.svg";
 import Mail from "../../assets/icons/email.svg";
@@ -14,12 +13,14 @@ const CardDetail = ({ id, img, title, detail, think }) => {
 
     <div className="flex flex-col 2xl:justify-center max-w-[1366px]">
 
-      <main className="lg:flex justify-between mt-20 md:mt-28">
+      <main className="lg:flex justify-between mt-20 md:mt-36">
         
         <article
-          data-aos="fade-right" data-aos-duration="1500"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-offset="0"
           id={id}
-          className="md:flex items-center justify-center w-[20.5rem] md:w-[42.5rem] lg:w-[42%] h-fit lg:h-full mx-auto bg-white/50 rounded-md shadow-md p-2"
+          className="md:flex items-center justify-center w-[92%] md:w-[42.5rem] lg:w-[42%] h-fit lg:h-full mx-auto bg-white/50 rounded-md shadow-md p-2 mt-4 md:mt-0"
         >
           {/* img */}
 
@@ -34,7 +35,11 @@ const CardDetail = ({ id, img, title, detail, think }) => {
 
         {/* Titulo y descripcion de card */}
 
-        <section data-aos="fade-left" data-aos-duration="1500" className="flex flex-col justify-stretch items-center mt-5 lg:px-10 py-5 px-3 mx-4 md:mx-5 lg:mt-0 h-fit lg:w-[50%] rounded-md bg-white/50 shadow-md">
+        <section
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-offset="0"
+        className="flex flex-col justify-stretch items-center mt-5 lg:px-10 py-5 px-3 mx-4 md:mx-5 lg:mt-0 h-fit lg:w-[50%] rounded-md bg-white/50 shadow-md">
 
           {/* Titulo */}
 
@@ -47,7 +52,7 @@ const CardDetail = ({ id, img, title, detail, think }) => {
 
             {/* detalle */}
 
-            <div className="font-redHat font-light text-sm lg:text-base py-1 text-black/70 w-full text-center">
+            <div className="font-redHat font-light text-base py-1 text-black/70 w-full text-center">
               {detail}
             </div>
           </div>
@@ -55,7 +60,7 @@ const CardDetail = ({ id, img, title, detail, think }) => {
           {/* Pensamiento sobre la obra */}
 
           <div className="px-6 py-4 lg:my-5 lg:w-full bg-white rounded-lg shadow-md">
-            <p className="text-black/70 font-think-text leading-7 tracking-wider text-justify">
+            <p className="text-black/70 text-base font-think-text leading-7 tracking-wider text-justify">
               {think}
             </p>
           </div>
