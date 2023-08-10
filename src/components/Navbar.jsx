@@ -22,7 +22,7 @@ const Navbar = () => {
         <nav className="w-full max-w-[1366px] md:mx-11">
           <ul className="flex justify-center md:justify-between items-center">
             <HashLink className="ml-2 md:ml-0" to={"/#home"}>
-              <img className="w-24 md:w-32 py-1" src={Logo} alt="" />
+              <img className="w-24 md:w-28 py-1" src={Logo} alt="" />
             </HashLink>
 
             {/* no mostrar en mobile */}

@@ -5,6 +5,8 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import Img1 from "../assets/carousel/1.jpg";
 import Img2 from "../assets/carousel/2.jpg";
+import Img3 from "../assets/carousel/3.jpg";
+import Img4 from "../assets/carousel/4.jpg";
 
 const autoplayOptions = { delay: 4000 };
 
@@ -26,6 +28,18 @@ export const EmblaCarousel = () => {
           <div className="embla__slide">
             <img 
             src={Img2} 
+            alt=""
+            loading="lazy" />
+          </div>
+          <div className="embla__slide">
+            <img 
+            src={Img3} 
+            alt=""
+            loading="lazy" />
+          </div>
+          <div className="embla__slide">
+            <img 
+            src={Img4} 
             alt=""
             loading="lazy" />
           </div>
